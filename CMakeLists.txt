@@ -18,7 +18,7 @@ add_compile_definitions(ARM_MATH_DSP)
 add_compile_definitions(__FPU_PRESENT=1U)
 
 # Create executable
-ADD_EXECUTABLE(${PROJECT_NAME} main.c delay.c mt3620-intercore.c Log_Debug.c printf/printf.c lib/VectorTable.c lib/UART.c
+ADD_EXECUTABLE(${PROJECT_NAME} main.c delay.c mt3620-intercore.c Log_Debug.c printf/printf.c
 							   nn/nn.c
 							   CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c
 							   CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c
